@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'Bego',
+  appName: 'Agenda de Viajes',
   webDir: 'www',
   bundledWebRuntime: false
 };

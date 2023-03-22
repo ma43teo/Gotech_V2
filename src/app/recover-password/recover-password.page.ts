@@ -26,5 +26,8 @@ export class RecoverPasswordPage implements OnInit {
    }
   ngOnInit() {
   }
+  Cancel(){
+    this.router.navigate(['login'])
+  }
   
 }
