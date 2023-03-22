@@ -18,7 +18,7 @@ export class LoginPage implements OnInit {
   Login(){
     const {Usuario, Clave} = this;
     this.autenticador.signInWithEmailAndPassword( Usuario, Clave)
-    .then((res:any) => this.roter.navigate(['home']))
+    .then((res:any) => this.roter.navigate(['events']))
     .catch((error:any) => console.dir(error));
     }
   ngOnInit() {

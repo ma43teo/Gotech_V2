@@ -23,6 +23,6 @@ authentication(){
   }
 
   Cancel(){
-    this.router.navigate(['home'])
+    this.router.navigate(['events'])
   }
 }

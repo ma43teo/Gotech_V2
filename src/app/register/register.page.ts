@@ -24,7 +24,7 @@ export class RegisterPage implements OnInit {
     }else{
       try{
         const result = this.autenticador.createUserWithEmailAndPassword( Usuario, Clave)
-        .then(() => this.router.navigate(['home'])) ;
+        .then(() => this.router.navigate(['events'])) ;
       }catch(err){
        console.dir(err);
       }

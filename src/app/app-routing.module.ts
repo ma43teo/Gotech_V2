@@ -32,6 +32,14 @@ const routes: Routes = [
     path: 'settings',
     loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
   },
+  {
+    path: 'events',
+    loadChildren: () => import('./events/events.module').then( m => m.EventsPageModule)
+  },
+  {
+    path: 'event-details',
+    loadChildren: () => import('./pages/school/event-details/event-details.module').then( m => m.EventDetailsPageModule)
+  },
  
 ];
 
