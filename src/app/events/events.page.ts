@@ -36,7 +36,7 @@ export class EventsPage implements OnInit {
 
   calendar= {
     mode:'month' as CalendarMode,
-    currentDate: new Date(2023,4,21),
+    currentDate: new Date(Date.now())
   };
   
 
@@ -104,7 +104,7 @@ export class EventsPage implements OnInit {
    } 
    ];
 
-  constructor(public modalController: ModalController, private roter: Router) { 
+  constructor(public modalController: ModalController, private router: Router) { 
     this.showAddEvent = false;
     this.allEvents = [];
     this.minDate = '2023-03-20'; 
@@ -148,7 +148,7 @@ export class EventsPage implements OnInit {
   }
 
   today(){
-    this.calendar.currentDate = new Date( 2023,4,21);
+    this.calendar.currentDate = new Date( Date.now());
 
   }
 
@@ -167,6 +167,10 @@ export class EventsPage implements OnInit {
       allDay: false
     } as IEvent);
     console.log(this.newEvent);
+  }
+
+  presentAlertPrompt(){
+    this.router.navigate(['settings'])
   }
 }
 
